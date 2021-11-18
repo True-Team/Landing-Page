@@ -1,0 +1,30 @@
+:root {
+  //Default colors
+  --clr-background: #0f0e17;
+  --orange: #ff8906;
+  --white: #fffffe;
+
+  //Typography
+  --font-family: "Poppins", sans-serif;
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.414;
+
+  //Heading sizes
+  --text-h4: calc(1em * var(--text-scale-ratio));
+  --text-h3: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-h2: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+  --text-h1: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+
+  //Font weight
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+
+  //Line height
+  --line-height: 1.3;
+}

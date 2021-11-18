@@ -1,0 +1,37 @@
+@use "../abstracts/mixins" as *;
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap); //Poppins
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--clr-background);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-bold);
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include desktop(768px) {
+  img {
+    width: 100%;
+  }
+}

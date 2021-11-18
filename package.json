@@ -1,0 +1,29 @@
+{
+  "name": "truebot-new-landing-page",
+  "version": "1.0.0",
+  "description": "A simple landing page for promoting the new true bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/main.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/True-Team/Landing-Page.git"
+  },
+  "keywords": [
+    "discordjs",
+    "truebot",
+    "javascript",
+    "website",
+    "npm",
+    "node",
+    "static"
+  ],
+  "author": "Sal Code",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/True-Team/Landing-Page/issues"
+  },
+  "homepage": "https://github.com/True-Team/Landing-Page#readme"
+}

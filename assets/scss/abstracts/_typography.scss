@@ -1,0 +1,26 @@
+h1 {
+  font-size: var(--text-h1);
+  line-height: var(--line-height);
+  color: var(--white);
+}
+h2 {
+  font-size: var(--text-h2);
+  line-height: var(--line-height);
+  color: var(--white);
+}
+h3 {
+  font-size: var(--text-h3);
+  line-height: var(--line-height);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+h4 {
+  font-size: var(--text-h4);
+  line-height: var(--line-height);
+  color: var(--white);
+}
+p {
+  font-weight: var(--font-weight-regular);
+  color: white;
+}

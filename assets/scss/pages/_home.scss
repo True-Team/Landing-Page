@@ -1,0 +1,46 @@
+@use "../abstracts/mixins" as *;
+
+.main-heading {
+  @include flex(flex, column, center, center);
+  margin-top: 5rem;
+}
+
+.main-heading h3 {
+  margin-top: 3rem;
+}
+
+.logos {
+  max-width: 800px;
+  @include flex(flex, row, space-between, center);
+  width: 100%;
+}
+
+.arrow {
+  margin-left: 2.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 40px;
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  animation: changeBck;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.btn a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+}
+
+.btn-invite {
+  margin-top: 1rem;
+}

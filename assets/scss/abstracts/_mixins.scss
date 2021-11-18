@@ -1,0 +1,17 @@
+@mixin desktop($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin flex(
+  $flex: flex,
+  $direction: null,
+  $justify-content: null,
+  $aling-items: null
+) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $aling-items;
+}
