@@ -15,3 +15,10 @@
   justify-content: $justify-content;
   align-items: $aling-items;
 }
+
+@mixin grid($justify-content: null, $align-items: null) {
+  display: grid;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  grid-template-columns: repeat(2, 1fr);
+}
