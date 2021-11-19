@@ -4,22 +4,3 @@
   width: 100%;
   margin-block: 10rem;
 }
-
-.features {
-  @include grid(null, center);
-  column-gap: inherit;
-  row-gap: 7rem;
-}
-
-.single-feature {
-  @include flex(flex, column, space-between, center);
-}
-
-.single-feature p {
-  margin-top: 4rem;
-  width: 60%;
-}
-
-.single-feature img {
-  margin-top: 4rem;
-}

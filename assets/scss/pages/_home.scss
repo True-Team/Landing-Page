@@ -55,3 +55,43 @@ p.arrow {
   font-size: 200px;
   color: #fc9842;
 }
+
+.features {
+  @include grid(null, center);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: inherit;
+  row-gap: 7rem;
+}
+
+.single-feature {
+  @include flex(flex, column, space-between, center);
+}
+
+.single-feature p {
+  margin-top: 4rem;
+  width: 60%;
+}
+
+.single-feature img {
+  margin-top: 4rem;
+}
+
+@include desktop(768px) {
+  p.arrow {
+    font-size: 150px;
+    margin-left: 0;
+  }
+
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .single-feature p {
+    width: 80%;
+  }
+
+  .main-heading h3 {
+    @include flex(flex, row, space-between, center);
+    margin-inline: auto;
+  }
+}
