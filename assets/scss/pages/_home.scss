@@ -84,8 +84,50 @@ p.arrow {
   border-radius: 40px;
 }
 
-.op-src-title-new:hover {
-  cursor: pointer;
+.op-src-title-content {
+  position: relative;
+}
+
+.op-src-title-content::before,
+.op-src-title-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.op-src-title-content::before {
+  background-color: var(--clr-background);
+  animation: typewriter var(--typewriterSpeed) steps(11) 1s forwards,
+    cancelTypewriter var(--typewriterSpeed) steps(11) 4s forwards;
+}
+
+.op-src-title-content::after {
+  width: 0.125em;
+  background: #fff;
+  animation: typewriter var(--typewriterSpeed) steps(11) 1s forwards,
+    blink 750ms steps(11) forwards infinite,
+    cancelTypewriter var(--typewriterSpeed) steps(11) 4s forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes cancelTypewriter {
+  to {
+    left: 0;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
 
 .op-src-img {
