@@ -1,0 +1,67 @@
+//Credits: https://blog.carbonfive.com/vintage-terminal-effect-in-css3/;
+a.op-src-animated {
+  position: relative;
+  text-decoration: none;
+  color: rgb(240, 50, 50);
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: #0f0e17;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: 0.5em solid;
+
+  -webkit-animation: typing 5s steps(6, end) infinite,
+    blinking 1s step-end infinite;
+  animation: typing 5s steps(6, end) infinite, blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from,
+  to {
+    width: 100%;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  75% {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blinking {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(240, 50, 50);
+  }
+}
+
+@keyframes blinking {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(240, 50, 50);
+  }
+}

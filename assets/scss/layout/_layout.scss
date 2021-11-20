@@ -4,3 +4,21 @@
   width: 100%;
   margin-block: 10rem;
 }
+
+.container-flex {
+  width: 100%;
+  margin-block: 10rem;
+  @include flex(flex, space-between, center);
+}
+
+.container-flex-clmn {
+  width: 100%;
+  margin-block: 10rem;
+  @include flex(flex, column, space-between, center);
+}
+
+@include desktop(768px) {
+  .container-flex {
+    @include grid(space-between, center);
+  }
+}
