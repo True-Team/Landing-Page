@@ -11,6 +11,13 @@
   @include flex(flex, space-between, center);
 }
 
+.container-grid {
+  @include grid();
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  margin-top: 3rem;
+}
+
 .container-flex-clmn {
   width: 100%;
   margin-block: 10rem;
