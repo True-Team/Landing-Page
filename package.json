@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/True-Team/Landing-Page/issues"
   },
-  "homepage": "https://github.com/True-Team/Landing-Page#readme"
+  "homepage": "https://github.com/True-Team/Landing-Page#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
 }
