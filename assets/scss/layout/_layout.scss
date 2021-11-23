@@ -7,8 +7,8 @@
 
 .container-flex {
   width: 100%;
-  margin-block: 10rem;
-  @include flex(flex, space-between, center);
+  margin-block: 5rem;
+  @include flex(flex, none, space-between, center);
 }
 
 .container-grid {
@@ -27,5 +27,10 @@
 @include desktop(768px) {
   .container-flex {
     @include grid(space-between, center);
+  }
+
+  .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6rem;
   }
 }

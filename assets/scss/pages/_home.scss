@@ -1,8 +1,9 @@
 @use "../abstracts/mixins" as *;
 
 .main-heading {
-  @include flex(flex, column, center, center);
+  @include flex(flex, column, space-between, center);
   margin-top: 5rem;
+  overflow: hidden;
 }
 
 .main-heading h3 {
@@ -66,6 +67,7 @@ p.arrow {
 
 .single-feature {
   @include flex(flex, column, space-between, center);
+  width: 100%;
 }
 
 .single-feature p {
@@ -112,6 +114,16 @@ div.single-feature.op-src h4 {
   text-transform: uppercase;
 }
 
+footer {
+  padding-block: 1rem;
+  background-color: var(--clr-background-footer);
+}
+
+.footer-header {
+  @include flex(flex, column, inherit, inherit);
+  gap: 1.5em;
+}
+
 @include desktop(768px) {
   p.arrow {
     font-size: 150px;
@@ -126,8 +138,11 @@ div.single-feature.op-src h4 {
     width: 80%;
   }
 
-  .main-heading h3 {
-    @include flex(flex, row, space-between, center);
-    margin-inline: auto;
+  .single-feature img {
+    width: 70%;
+  }
+
+  .op-src-text {
+    width: 80%;
   }
 }
