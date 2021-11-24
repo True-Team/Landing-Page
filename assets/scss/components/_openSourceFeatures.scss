@@ -1,0 +1,51 @@
+@use "../abstracts/mixins" as *;
+
+.op-src-title-new {
+  color: rgb(240, 50, 50);
+  border: 2px solid rgb(240, 50, 50);
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.op-src-img {
+  margin-top: 5rem;
+}
+
+.op-src-text {
+  width: 40%;
+  margin-top: 3rem;
+  line-height: var(--line-height);
+}
+
+.op-src-text-end {
+  font-size: var(--text-h3);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+.op-src {
+  width: 100%;
+}
+
+.op-src-heading {
+  margin-block: 0 !important;
+  animation-delay: 0.7s;
+}
+
+.op-src-features {
+  animation-delay: 0.5s;
+}
+
+div.single-feature.op-src img {
+  margin-top: 1em;
+}
+
+div.single-feature.op-src h4 {
+  text-transform: uppercase;
+}
+
+@include mobile() {
+  .op-src-text {
+    width: 80%;
+  }
+}

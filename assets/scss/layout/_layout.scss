@@ -24,7 +24,7 @@
   @include flex(flex, column, space-between, center);
 }
 
-@include desktop(768px) {
+@include mobile() {
   .container-flex {
     @include grid(space-between, center);
   }

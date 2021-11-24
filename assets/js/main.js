@@ -1,10 +1,10 @@
 /**
  *
- * @param {String} container The name of the container class you want to apply the animation to
- * @param {*} className The class you want to apply to the container
+ * @param {String} element The name of the element you want to apply the animation to
+ * @param {String} className The class you want to apply to the container
  */
 
-function addAnimatedClass(container, className) {
+function addAnimatedClass(element, className) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -13,8 +13,8 @@ function addAnimatedClass(container, className) {
     });
   });
 
-  observer.observe(document.querySelector(container));
+  observer.observe(document.querySelector(element));
 }
 
-addAnimatedClass("features", "animate__fadeInLeft");
-addAnimatedClass("open-source", "animate__fadeInUp");
+addAnimatedClass(".op-src-heading", "animate__fadeIn");
+addAnimatedClass(".op-src-features", "animate__fadeIn");

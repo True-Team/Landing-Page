@@ -1,0 +1,36 @@
+@use "../abstracts/mixins" as *;
+
+.features {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: inherit;
+  row-gap: 7rem;
+  align-items: center;
+}
+
+.single-feature {
+  @include flex(flex, column, space-between, center);
+  width: 100%;
+}
+
+.single-feature p {
+  margin-top: 4rem;
+  width: 60%;
+}
+
+.single-feature img {
+  margin-top: 4rem;
+}
+
+@include mobile() {
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .single-feature p {
+    width: 80%;
+  }
+
+  .single-feature img {
+    width: 70%;
+  }
+}

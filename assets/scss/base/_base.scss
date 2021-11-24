@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-@include desktop(768px) {
+@include mobile() {
   img {
     width: 100%;
   }

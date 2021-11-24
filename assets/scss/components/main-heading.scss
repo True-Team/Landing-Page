@@ -1,0 +1,33 @@
+@use "../abstracts/mixins" as *;
+
+.main-heading {
+  @include flex(flex, column, space-between, center);
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.main-heading h3 {
+  margin-top: 3rem;
+}
+
+.logos {
+  max-width: 800px;
+  @include flex(flex, row, space-between, center);
+  width: 100%;
+}
+
+.arrow {
+  margin-left: 2.5rem;
+}
+
+p.arrow {
+  font-size: 200px;
+  color: #fc9842;
+}
+
+@include mobile() {
+  p.arrow {
+    font-size: 150px;
+    margin-left: 0;
+  }
+}

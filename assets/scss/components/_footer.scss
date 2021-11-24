@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as *;
+
+footer {
+  @include flex(flex, column, space-between, center);
+  padding-block: 1.5rem;
+  background-color: var(--clr-background-footer);
+}
+
+footer a {
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--orange);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
